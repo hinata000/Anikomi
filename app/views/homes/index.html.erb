@@ -1,23 +1,23 @@
+
 <div class="carousel carousel-center rounded-box">
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Pizza" />
-  </div> 
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Pizza" />
-  </div> 
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Pizza" />
-  </div> 
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Pizza" />
-  </div> 
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Pizza" />
-  </div> 
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Pizza" />
-  </div> 
-  <div class="carousel-item">
-    <img src="/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Pizza" />
+  <%= @animation.each do |a| %>
+    <div class="carousel-item">
+    <%# <%= image_tag a.image, class: "h-12 w-36" %> %>
+    </div>
+  <% end %>
+</div>
+
+<div class="card w-96 bg-base-100 shadow-xl">
+  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
   </div>
+</div>
+
+<div class="p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+  <span class="font-medium">Info alert!</span> Change a few things up and try submitting again.
 </div>
