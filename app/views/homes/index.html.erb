@@ -2,7 +2,7 @@
 <div class="carousel carousel-center rounded-box">
   <% @animation.each do |a| %>
     <div>
-      <div class="card w-80 px-4 bg-base-100 shadow-xl">
+      <div class="card w-80 mx-2 bg-base-200 shadow-xl">
         <figure><%= link_to image_tag(a.image, alt:a.title, class:"w-full h-36 object-cover object-center"), "/animations/#{a.id}" %></figure>
         <div class="card-body px-4">
           <h2 class="card-title"><%= a.title.truncate(11) %></h2>
