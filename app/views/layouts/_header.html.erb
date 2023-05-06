@@ -4,7 +4,14 @@
   </div>
   <div class="flex-none gap-2">
     <div class="form-control">
-      <input type="text" placeholder="Search" class="input input-bordered" />
+      <%= search_form_for @q, url: search_results_animations_path do |f| %>
+        <form>   
+          <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+          <div class="relative">
+            <%= f.search_field :title_cont, class: "input input-bordered", placeholder: "タイトルで検索", value: "" %>
+          </div>
+        </form>
+      <% end %>
     </div>
     <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-ghost btn-circle avatar">
