@@ -13,6 +13,6 @@ class HomesController < ApplicationController
       today_season = 3
     end
 
-    @animation = Animation.where(season: today_season, year: today.year)
+    @animations = Animation.where(season: today_season, year: today.year)
   end
 end
