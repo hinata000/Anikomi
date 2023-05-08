@@ -53,9 +53,9 @@ class Animation < ApplicationRecord
   #   favorites.where(user_id: user.id).exists?
   # end
 
-  # def self.ransackable_attributes(auth_object = nil)
-  #   %w[title]
-  # end
+  def self.ransackable_attributes(auth_object = nil)
+    %w[title]
+  end
 
   # def avg_score
   #   unless self.reviews.empty?
